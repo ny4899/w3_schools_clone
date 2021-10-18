@@ -1,0 +1,915 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//==========================
+$red: red;
+$w3pink: #ffc0c7;
+$darkred: rgb(187, 4, 4);
+$blue: blue;
+$lightblue: rgb(202, 231, 231);
+$white: white;
+$black: black;
+$w3green: #04aa6d;
+$w3darkblue: rgb(40, 42, 53);
+$w3subMobBg: rgb(231, 233, 235);
+$w3yellow: #fff4a3;
+$whitehover: rgb(240, 236, 236);
+$blackhover: rgb(34, 33, 33);
+$w3greenhover: #038555;
+$w3darkbluehover: rgb(25, 27, 37);
+$w3subMobBghover: rgb(187, 187, 189);
+$w3yellowhover: #fdec69;
+$navHeight: 70px;
+$maxWidth: 1600px;
+$w3gray: #f1f1f1;
+$w3grayHover: #e7e9eb;
+//==========================
+@mixin center($x) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $x;
+}
+//==========================
+.dis_none {
+  display: none !important;
+}
+.dis_flex {
+  display: flex !important;
+}
+.dis_block {
+  display: block !important;
+}
+//==========================
+// general classes
+.w3_dark_blue_bg {
+  background-color: $w3darkblue;
+}
+.w3_yellow_bg {
+  background-color: $w3yellow;
+}
+.w3_red_bg {
+  background-color: $red;
+}
+.w3_grey_bg {
+  background-color: $w3subMobBg;
+}
+.w3_gray_bg {
+  background-color: $w3gray;
+}
+.w3_grayhover_bg {
+  background-color: $w3grayHover;
+}
+.w3_green_bg {
+  background-color: $w3green;
+}
+.w3_white_bg {
+  background-color: $white;
+}
+.w3_lightblue_bg {
+  background-color: $lightblue;
+}
+.w3_pink_bg {
+  background-color: $w3pink;
+}
+.w3_dark_blue_color {
+  color: $w3darkblue;
+}
+.w3_yellow_color {
+  color: $w3yellow;
+}
+.w3_grey_color {
+  color: $w3subMobBg;
+}
+.w3_green_color {
+  color: $w3green;
+}
+.w3_white_color {
+  color: $white;
+}
+.w3_black_color {
+  color: $black;
+}
+.w3_red_color {
+  color: $red;
+}
+.w3_darkred_color {
+  color: $darkred;
+}
+.w3_blue_color {
+  color: $blue;
+}
+.pad20_left {
+  padding-left: 20px;
+}
+
+.w3_buttons {
+  display: inline-block !important;
+  min-width: 200px;
+  max-width: max-content;
+  text-align: center;
+  padding: 10px !important;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+}
+//==========================
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body > p {
+  font-size: 100px;
+}
+//==========================
+
+//==========================
+.main_header {
+  max-width: $maxWidth;
+  width: 100%;
+  height: $navHeight;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10000;
+  box-shadow: 0 0px 3px black;
+  .nav_left {
+    display: flex;
+    .logo_box {
+      @include center(row);
+      a {
+        @include center(row);
+
+        img {
+          height: $navHeight;
+        }
+      }
+    }
+
+    .main_links {
+      @include center(row);
+      padding: 0 15px;
+      text-decoration: none;
+      font-weight: bolder;
+      color: black;
+      cursor: pointer;
+      i {
+        margin-left: 5px;
+      }
+      &:hover {
+        background-color: $w3darkblue;
+        color: white;
+      }
+      // CSS for full screen nav starts
+      .sub_link_container {
+        position: absolute;
+        top: $navHeight;
+        left: 0;
+        width: 100%;
+        background-color: $w3darkblue;
+        color: white;
+        .sub_link_main_box {
+          max-width: 1000px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 20px;
+          .sub_nav_header {
+            width: 100%;
+            height: 50px;
+            margin: 30px 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $w3yellow;
+            i {
+              font-size: 30px;
+              cursor: pointer;
+              color: white;
+            }
+          }
+          .links_inner_box {
+            width: 100%;
+            display: flex;
+            padding-bottom: 30px;
+            .column_level_outer {
+              display: flex;
+              width: 50%;
+              .column_level_main {
+                width: 50%;
+                h2 {
+                  font-size: 20px;
+                  margin: 15px 0;
+                  padding: 5px;
+                  color: $w3yellow;
+                }
+                a {
+                  display: block;
+                  text-decoration: none;
+                  padding: 5px;
+                  color: white;
+                  &:hover {
+                    background-color: darkgray;
+                    color: black;
+                    font-weight: bolder;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      // CSS for full screen nav ends
+    }
+    // CSS for mob nav starts
+    .sub_mob_link_container {
+      position: absolute;
+      top: $navHeight;
+      left: 0;
+      width: 100%;
+      background-color: $w3subMobBg;
+      padding: 30px 15px;
+      .mob_sub_header {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        i {
+          font-size: 25px;
+          color: black;
+          cursor: pointer;
+        }
+      }
+      .mob_nav_main_link {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+        font-size: 18px;
+        &:hover {
+          background-color: rgba($w3darkblue, $alpha: 0.2);
+        }
+      }
+      .mob_sub_head {
+        // background-color: red;
+        height: 20px;
+        margin: 30px 0 40px 0;
+        font-size: 30px;
+        color: $w3yellow;
+      }
+      .mob_nav_sub_link_container {
+        background-color: $w3darkblue;
+        padding: 10px;
+        .mob_nav_sub_link_box {
+          width: 100%;
+          display: flex;
+          .mob_nav_sub_link_box_col {
+            width: 50%;
+            // border: 2px solid red;
+            h3 {
+              font-size: 20px;
+              color: $w3yellow;
+              margin: 10px 0;
+              padding: 0 10px;
+            }
+            a {
+              display: block;
+              text-decoration: none;
+              padding: 10px 10px;
+              color: white;
+              font-weight: bolder;
+              &:hover {
+                background-color: $w3subMobBg;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+    // CSS for mob nav ends
+  }
+
+  .nav_right {
+    @include center(row);
+    i {
+      margin-right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    a {
+      width: 150px;
+      text-align: center;
+      padding: 10px !important;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: bolder;
+      cursor: pointer;
+      text-decoration: none;
+
+      background-color: $w3green;
+      color: white;
+      margin: 0 10px;
+      &:hover {
+        background-color: $w3greenhover;
+      }
+    }
+  }
+}
+
+//==============================================
+// making display none of menu button on full screen starts
+#menu {
+  display: none;
+}
+
+// w3 main container css starts
+.w3_main_container {
+  max-width: $maxWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+// w3 main container css ends
+// w3 w3_content1_box css starts
+.w3_content1_box {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  .w3_content1_box_left {
+    width: 50%;
+    @include center(column);
+    text-align: center;
+    h1 {
+      font-size: 80px;
+      margin: 15px 0;
+    }
+    p {
+      font-size: 20px;
+      margin: 15px 0;
+      font-weight: bolder;
+    }
+    a {
+      margin: 10px 0;
+    }
+    .w3_green_bg:hover {
+      background-color: $w3greenhover;
+    }
+    .w3_yellow_bg:hover {
+      background-color: $w3yellowhover;
+    }
+    .w3_grey_bg:hover {
+      background-color: $w3subMobBghover;
+    }
+    .w3_dark_blue_bg:hover {
+      background-color: $w3darkbluehover;
+    }
+  }
+  .w3_content1_box_right {
+    width: 50%;
+    border-radius: 10px;
+    padding: 0 20px;
+    box-shadow: 0 0 5px rgb(114, 113, 113);
+    h1 {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+    .example_box {
+      width: 100%;
+      border-left: 4px solid $w3green;
+      padding: 5px 10px;
+      min-height: 200px;
+      p {
+        margin: 10px 0;
+      }
+    }
+    a {
+      margin: 20px 0;
+      &:hover {
+        background-color: $w3greenhover;
+      }
+    }
+  }
+}
+// w3 w3_content1_box css ends
+// other_link_container css for full screen starts
+.other_link_container_outer {
+  width: 100%;
+  background-color: $w3darkblue;
+  padding: 40px 0 60px 0;
+}
+.other_link_container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10px;
+
+  // lg link container css starts
+  .lg_link_container {
+    width: 45%;
+    border-radius: 5px;
+    padding: 20px 20px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 40px;
+      margin: 5px 0;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      margin: 5px 0;
+      font-weight: bolder;
+      text-align: center;
+    }
+    .other_container_link_box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+      a {
+        margin: 2.5px 0;
+        &:hover {
+          background-color: $black;
+        }
+      }
+    }
+  }
+  // lg link container css ends
+  .w3links_box {
+    border-radius: 5px;
+    padding: 40px 0;
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+  }
+  .w3links_box20 {
+    width: 20.1%;
+  }
+  .w3links_box45 {
+    width: 45.1%;
+  }
+}
+// css for code editor container starts
+.code_editor_container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 0 10px;
+  h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px 0;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .code_editor_box {
+    width: 100%;
+    margin: 10px 0;
+
+    .code_editor_bar_box {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      .code_editor_dot_box {
+        width: 20%;
+        height: 100%;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        span {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          margin: 0 3px;
+        }
+      }
+      .code_editor_input_box {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        input {
+          width: 80%;
+          height: 22px;
+          background-color: white;
+          border-radius: 2px;
+          border: none;
+          padding: 10px;
+        }
+      }
+    }
+    .code_editor_button_box {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: flex-start;
+      button {
+        // #E7E9EB
+        width: 100px;
+        height: 100%;
+        border: none;
+        font-weight: bolder;
+        font-size: 16px;
+        &:hover {
+          background-color: #e7e9eb;
+        }
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .code_editor_link_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    a {
+      margin: 10px 0;
+      padding: 10px 20px !important;
+    }
+    .w3_green_bg:hover {
+      background-color: $w3greenhover;
+    }
+    .w3_yellow_bg:hover {
+      background-color: $w3yellowhover;
+    }
+  }
+}
+// css for code editor container ends
+// css for template contanier starts
+.template_container_upper {
+  width: 100%;
+  padding: 50px 10px;
+}
+.template_container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px 0;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px 0;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    width: 80%;
+    text-align: center;
+    text-decoration: none;
+    margin: 40px 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 30px;
+  }
+  .w3_dark_blue_bg:hover {
+    background-color: black;
+  }
+}
+// css for template contanier ends
+// other_link_container css for full screen ends
+// css for footer starts
+
+footer {
+  width: 100%;
+  padding: 50px;
+  .footer_row1 {
+    width: 100%;
+    display: flex;
+    .footer_row1_left {
+      width: 50%;
+      display: flex;
+      a {
+        margin: 0 3px;
+        padding: 10px 20px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-size: 14px;
+        &:hover {
+          background-color: $w3grayHover;
+        }
+      }
+    }
+    .footer_row1_right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: white;
+        font-weight: bolder;
+        &:hover {
+          color: $w3green;
+        }
+      }
+      span {
+        display: inline-block;
+        width: 2px;
+        height: 50%;
+        background-color: white;
+      }
+    }
+  }
+  .footer_row2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    .footer_link_box {
+      width: 150px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        text-decoration: none;
+        margin: 0 10px;
+        i {
+          color: white;
+          font-size: 25px;
+        }
+        &:hover i {
+          color: $w3green;
+        }
+      }
+    }
+  }
+  & > p {
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    line-height: 25px;
+    word-spacing: 1.5px;
+    a {
+      color: white;
+      &:hover {
+        color: $w3green;
+      }
+    }
+  }
+  .footer_like_box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      i {
+        font-size: 50px;
+        color: white;
+      }
+      &:hover i {
+        color: $w3grayHover;
+      }
+    }
+  }
+  .w3_shop_box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-weight: bolder;
+      width: 60%;
+      height: 100%;
+      border-radius: 30px;
+      background-color: $w3green;
+      color: white;
+      &:hover {
+        background-color: $w3greenhover;
+      }
+    }
+  }
+}
+// css for footer ends
+@media screen and (max-width: 992px) {
+  // css for nav sub links on large screen starts
+  .column_level_outer {
+    width: 100%;
+    flex-direction: column;
+    .column_level_main {
+      width: 100% !important;
+    }
+  }
+  // css for nav sub links on large screen ends
+  // other_link_container css for large screen starts
+  .other_link_container {
+    .lg_link_container {
+      width: 95%;
+      margin: 10px 0;
+    }
+    .w3links_box {
+      margin: 10px 0;
+    }
+    .w3links_box20 {
+      width: 45.1%;
+    }
+    .w3links_box45 {
+      width: 95%;
+    }
+  }
+  // other_link_container css for large screen ends
+  // css for footer lg screen starts
+  footer {
+    .footer_row1 {
+      flex-direction: column;
+      .footer_row1_left {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+      }
+      .footer_row1_right {
+        justify-content: center;
+        margin: 10px 0;
+        width: 100%;
+      }
+    }
+  }
+  // css for footer lg screen ends
+}
+@media screen and (max-width: 768px) {
+  // making display none of main links of full screen nav on mid screen starts
+  #tutorial {
+    display: none !important;
+  }
+  #reference {
+    display: none !important;
+  }
+  #exercise {
+    display: none !important;
+  }
+  // making display none of main links of full screen nav on mid screen ends
+  // making display flex of menu button on mid screen starts
+  #menu {
+    display: flex !important;
+  }
+  // making display flex of menu button on mid screen ends
+  // w3 w3_content1_box css for mid screen starts
+  .w3_content1_box {
+    flex-direction: column;
+    .w3_content1_box_left {
+      width: 100% !important;
+      padding-bottom: 50px !important;
+    }
+    .w3_content1_box_right {
+      width: 100% !important;
+    }
+  }
+  // w3 w3_content1_box css for mid screen ends
+}
+@media screen and (max-width: 576px) {
+  // css for nav log in button on small screen starts
+  .nav_right {
+    @include center(row);
+    i {
+      margin-right: 0px;
+      font-size: 16px;
+    }
+    a {
+      width: 60px !important;
+      font-size: 12px !important;
+      margin: 0 5px;
+    }
+  }
+  // css for nav log in button on small screen ends
+  // css for mob nav starts
+  .mob_nav_sub_link_container {
+    .mob_nav_sub_link_box {
+      flex-direction: column;
+      .mob_nav_sub_link_box_col {
+        width: 100% !important;
+        // border: 2px solid red;
+      }
+    }
+  }
+  // css for mob nav ends
+  // w3 w3_content1_box css for small screen starts
+  .w3_content1_box {
+    padding: 20px !important;
+    .w3_content1_box_left {
+      padding-bottom: 20px !important;
+      h1 {
+        font-size: 50px;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    }
+    .w3_content1_box_right {
+      display: none;
+    }
+  }
+  // w3 w3_content1_box css for small screen ends
+  // other_link_container css for small screen starts
+
+  .other_link_container {
+    .lg_link_container {
+      width: 100%;
+      margin: 5px 0;
+    }
+    .w3links_box {
+      margin: 5px 0;
+    }
+    .w3links_box20 {
+      width: 100%;
+    }
+    .w3links_box45 {
+      width: 100%;
+    }
+  }
+  // other_link_container css for small screen ends
+  // css for code editor container on small screen starts
+  .code_editor_container {
+    margin: 50px auto 20px auto;
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .code_editor_link_box {
+      .w3_buttons {
+        max-width: 100% !important;
+      }
+    }
+  }
+  // css for code editor container on small screen ends
+  // css for template contanier on small starts
+  .template_container_upper {
+    padding: 30px 10px;
+  }
+  .template_container {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 16px;
+      margin: 20px 0 30px 0;
+    }
+    a {
+      width: 100%;
+    }
+  }
+  // css for template contanier on small ends
+  // footer css for small screen starts
+  footer {
+    padding: 50px 10px;
+    .w3_shop_box {
+      a {
+        width: 100%;
+      }
+    }
+  }
+  // footer css for small screen ends
+}

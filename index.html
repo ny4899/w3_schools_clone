@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>w3 clone</title>
+    <link rel="stylesheet" href="SASS/main.css" />
+    <link rel="stylesheet" href="webfonts/all.css" />
+    <!-- ------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="nav_left">
+        <div class="logo_box">
+          <a href=""> <img src="SASS/images/logo.png" alt="" /></a>
+        </div>
+        <!-- menu button starts  -->
+        <div
+          id="menu"
+          class="main_links"
+          onclick="mob_sub_nav_show_hide(mob_nav_check)"
+        >
+          Menu <i class="fas fa-caret-down"></i>
+        </div>
+        <!-- menu button ends  -->
+        <!-- menu sub nav container starts  -->
+        <div id="subNav" class="sub_mob_link_container dis_none">
+          <header class="mob_sub_header">
+            <i
+              id="subNavCancel"
+              class="fas fa-times"
+              onclick="mob_sub_nav_show_hide('hide')"
+            ></i>
+          </header>
+          <!-- mob nav tutorial heading starts  -->
+          <h2
+            id="mobTutorial"
+            class="mob_nav_main_link"
+            onclick="mob_sub_Tutorial_show_hide(mob_tutorial_check)"
+          >
+            Tutorials <i class="fas fa-caret-down"></i>
+          </h2>
+          <!-- mob nav tutorial heading ends  -->
+          <!-- mob nav tutorial sub link container starts  -->
+          <div id="mobTutorialDrop" class="mob_nav_sub_link_container dis_none">
+            <header class="mob_sub_head">Tutorials</header>
+            <div class="mob_nav_sub_link_box">
+              <div class="mob_nav_sub_link_box_col">
+                <h3>Tutorials Heading 1</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+
+                <h3>Tutorials Heading 2</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+
+                <h3>Tutorials Heading 3</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Tutorials Heading 4</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+
+                <h3>Tutorials Heading 5</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+
+                <h3>Tutorials Heading 6</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Tutorials Heading 7</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+              </div>
+            </div>
+          </div>
+          <!-- mob nav tutorial sub link container ends  -->
+          <!-- mob nav References heading starts  -->
+          <h2
+            id="mobReference"
+            class="mob_nav_main_link"
+            onclick="mob_sub_Reference_show_hide(mob_Reference_check)"
+          >
+            References <i class="fas fa-caret-down"></i>
+          </h2>
+          <!-- mob nav References heading ends  -->
+          <!-- mob nav References sub link container starts  -->
+          <div
+            id="mobReferenceDrop"
+            class="mob_nav_sub_link_container dis_none"
+          >
+            <header class="mob_sub_head">Tutorials</header>
+            <div class="mob_nav_sub_link_box">
+              <div class="mob_nav_sub_link_box_col">
+                <h3>References Heading 1</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+
+                <h3>References Heading 2</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>References Heading 3</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>References Heading 4</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+
+                <h3>References Heading 5</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>References Heading 6</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>References Heading 7</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+              </div>
+            </div>
+          </div>
+          <!-- mob nav References sub link container ends  -->
+          <!-- mob nav Exercises heading starts  -->
+          <h2
+            id="mobExercise"
+            class="mob_nav_main_link"
+            onclick="mob_sub_Exercise_show_hide(mob_Exercise_check)"
+          >
+            Exercises <i class="fas fa-caret-down"></i>
+          </h2>
+          <!-- mob nav Exercises heading ends  -->
+          <!-- mob nav Exercise sub link container starts  -->
+          <div id="mobExerciseDrop" class="mob_nav_sub_link_container dis_none">
+            <header class="mob_sub_head">Tutorials</header>
+            <div class="mob_nav_sub_link_box">
+              <div class="mob_nav_sub_link_box_col">
+                <h3>Exercise Heading 1</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Exercise Heading 2</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Exercise Heading 3</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Exercise Heading 4</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Exercise Heading 5</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Exercise Heading 6</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <h3>Exercise Heading 7</h3>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+              </div>
+            </div>
+          </div>
+          <!-- mob nav Exercise sub link container ends  -->
+        </div>
+        <!-- menu sub nav container ends  -->
+
+        <div id="tutorial" class="main_links">
+          Tutorials <i class="fas fa-caret-down"></i>
+          <!-- tutorials sub link starts  -->
+          <div id="tutorials_sub" class="sub_link_container dis_none">
+            <div class="sub_link_main_box">
+              <header class="sub_nav_header">
+                <h1>Tutorials</h1>
+                <i id="cancel_sub_nav" class="fas fa-times"></i>
+              </header>
+              <div class="links_inner_box">
+                <div class="column_level_outer">
+                  <div class="column_level_main">
+                    <h2>Tutorials heading 1</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <div class="column_level_main">
+                    <h2>Tutorials heading 2</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>Tutorials heading 3</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                </div>
+                <div class="column_level_outer">
+                  <div class="column_level_main">
+                    <h2>Tutorials heading 4</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>Tutorials heading 5</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <div class="column_level_main">
+                    <h2>Tutorials heading 6</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>Tutorials heading 7</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tutorials sub link ends  -->
+        </div>
+        <div id="reference" class="main_links">
+          References <i class="fas fa-caret-down"></i>
+          <!-- references sub link starts  -->
+          <div id="references_sub" class="sub_link_container dis_none">
+            <div class="sub_link_main_box">
+              <header class="sub_nav_header">
+                <h1>References</h1>
+                <i id="cancel_sub_nav" class="fas fa-times"></i>
+              </header>
+              <div class="links_inner_box">
+                <div class="column_level_outer">
+                  <div class="column_level_main">
+                    <h2>References heading 1</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <div class="column_level_main">
+                    <h2>References heading 2</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>References heading 3</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                </div>
+                <div class="column_level_outer">
+                  <div class="column_level_main">
+                    <h2>References heading 4</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>References heading 5</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <div class="column_level_main">
+                    <h2>References heading 6</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>References heading 7</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- references sub link ends  -->
+        </div>
+        <div id="exercise" class="main_links">
+          Exercises <i class="fas fa-caret-down"></i>
+          <!-- exercises sub link starts  -->
+          <div id="exercises_sub" class="sub_link_container dis_none">
+            <div class="sub_link_main_box">
+              <header class="sub_nav_header">
+                <h1>Exercises</h1>
+                <i id="cancel_sub_nav" class="fas fa-times"></i>
+              </header>
+              <div class="links_inner_box">
+                <div class="column_level_outer">
+                  <div class="column_level_main">
+                    <h2>Exercises heading 1</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <div class="column_level_main">
+                    <h2>Exercises heading 2</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>Exercises heading 3</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                </div>
+                <div class="column_level_outer">
+                  <div class="column_level_main">
+                    <h2>Exercises heading 4</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>Exercises heading 6</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                  <div class="column_level_main">
+                    <h2>Lorem, ipsum.</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <h2>Lorem, ipsum.</h2>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                    <a href="#">Lorem, ipsum dolor.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- exercises sub link ends  -->
+        </div>
+      </div>
+      <div class="nav_right">
+        <i class="fas fa-search"></i>
+        <a>Log in</a>
+      </div>
+    </header>
+    <!-- w3_main_container starts  -->
+    <!-- of html  -->
+    <div class="w3_main_container">
+      <div class="w3_content1_box w3_dark_blue_bg">
+        <div class="w3_content1_box_left">
+          <h1 class="w3_white_color">HTML</h1>
+          <p class="w3_white_color">The language for building web pages</p>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Learn Html</a
+          >
+          <a href="#" class="w3_buttons w3_yellow_bg w3_black_color"
+            >Video Tutorial</a
+          >
+          <a href="#" class="w3_buttons w3_grey_bg w3_black_color"
+            >Html references</a
+          >
+        </div>
+        <div class="w3_content1_box_right w3_grey_bg">
+          <h1>HTML Example:</h1>
+          <div class="example_box w3_white_bg">
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">!DOCTYPE</span>
+              <span class="w3_red_color">html</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">html</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">title</span
+              ><span class="w3_blue_color">></span>
+              <span class="w3_black_color">HTML Tutorial</span>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/title</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">body</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">h1</span
+              ><span class="w3_blue_color">></span>
+              <span class="w3_black_color">This is Heading.</span>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/h1</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">p</span
+              ><span class="w3_blue_color">></span>
+              <span class="w3_black_color">This is paragraph.</span>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/p</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/body</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/html</span
+              ><span class="w3_blue_color">></span>
+            </p>
+          </div>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Try it yourself</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- w3_main_container ends  -->
+    <!-- w3_main_container starts  -->
+    <!-- of CSS  -->
+    <div class="w3_main_container">
+      <div class="w3_content1_box w3_lightblue_bg">
+        <div class="w3_content1_box_left">
+          <h1 class="w3_black_color">CSS</h1>
+          <p class="w3_black_color">The language for styling web pages</p>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Learn CSS</a
+          >
+          <a href="#" class="w3_buttons w3_yellow_bg w3_black_color"
+            >CSS Reference</a
+          >
+        </div>
+        <div class="w3_content1_box_right w3_grey_bg">
+          <h1>CSS Example:</h1>
+          <div class="example_box w3_white_bg">
+            <p>
+              <span class="w3_darkred_color">body</span>
+              <span class="w3_black_color">{</span>
+            </p>
+            <p class="pad20_left">
+              <span class="w3_red_color">background-color</span>
+              <span class="w3_black_color">:</span>
+              <span class="w3_blue_color">lightgreen</span>
+              <span class="w3_black_color">;</span>
+            </p>
+            <p>
+              <span class="w3_black_color">}</span>
+            </p>
+            <p>
+              <span class="w3_darkred_color">h1</span>
+              <span class="w3_black_color">{</span>
+            </p>
+            <p class="pad20_left">
+              <span class="w3_red_color">color</span>
+              <span class="w3_black_color">:</span>
+              <span class="w3_blue_color">green</span>
+              <span class="w3_black_color">;</span>
+            </p>
+            <p class="pad20_left">
+              <span class="w3_red_color">font-weight</span>
+              <span class="w3_black_color">:</span>
+              <span class="w3_blue_color">bold</span>
+              <span class="w3_black_color">;</span>
+            </p>
+            <p>
+              <span class="w3_black_color">}</span>
+            </p>
+          </div>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Try it yourself</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- w3_main_container ends  -->
+    <!-- w3_main_container starts  -->
+    <!-- of javaScript  -->
+    <div class="w3_main_container">
+      <div class="w3_content1_box w3_yellow_bg">
+        <div class="w3_content1_box_left">
+          <h1 class="w3_black_color">Javascript</h1>
+          <p class="w3_black_color">The language for programming web pages</p>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Learn javascript</a
+          >
+          <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+            >javascript Reference</a
+          >
+        </div>
+        <div class="w3_content1_box_right w3_grey_bg">
+          <h1>Javascript Example:</h1>
+          <div class="example_box w3_white_bg">
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">button</span>
+              <span class="w3_red_color">onclick</span
+              ><span class="w3_black_color">=</span
+              ><span class="w3_blue_color">"myFunction()"</span
+              ><span class="w3_blue_color">></span
+              ><span class="w3_black_color">Click Me!</span
+              ><span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/button</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <br />
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">script</span
+              ><span class="w3_blue_color">></span>
+            </p>
+            <p>
+              <span class="w3_blue_color">function</span>
+              <span class="w3_black_color">myFunction() {</span>
+            </p>
+            <p class="pad20_left">
+              <span class="w3_blue_color">let</span>
+              <span class="w3_black_color">x = document.getElementById(</span
+              ><span class="w3_darkred_color">"demo"</span
+              ><span class="w3_black_color">);</span>
+            </p>
+            <p class="pad20_left">
+              <span class="w3_black_color">x.style.fontSize =</span>
+              <span class="w3_darkred_color">"25px"</span
+              ><span class="w3_black_color">;</span>
+            </p>
+            <p class="pad20_left">
+              <span class="w3_black_color">x.style.color =</span>
+              <span class="w3_darkred_color">"red"</span
+              ><span class="w3_black_color">;</span>
+            </p>
+            <p>
+              <span class="w3_black_color">}</span>
+            </p>
+            <p>
+              <span class="w3_blue_color"><</span
+              ><span class="w3_darkred_color">/script</span
+              ><span class="w3_blue_color">></span>
+            </p>
+          </div>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Try it yourself</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- w3_main_container ends  -->
+    <!-- w3_main_container starts  -->
+    <!-- of Python  -->
+    <div class="w3_main_container">
+      <div class="w3_content1_box w3_dark_blue_bg">
+        <div class="w3_content1_box_left">
+          <h1 class="w3_white_color">PYTHON</h1>
+          <p class="w3_white_color">A popular programming language</p>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Learn Python</a
+          >
+          <a href="#" class="w3_buttons w3_grey_bg w3_black_color"
+            >Python references</a
+          >
+        </div>
+        <div class="w3_content1_box_right w3_grey_bg">
+          <h1>Python Example:</h1>
+          <div class="example_box w3_white_bg">
+            <p>
+              <span class="w3_blue_color">if</span>
+              <span class="w3_red_color">5</span>
+              <span class="w3_black_color">></span>
+              <span class="w3_red_color">2</span>
+              <span class="w3_black_color">:</span>
+            </p>
+            <p>
+              <span class="w3_black_color">print(</span
+              ><span class="w3_darkred_color">"Five is greater than two!"</span
+              ><span class="w3_black_color">)</span>
+            </p>
+          </div>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Try it yourself</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- w3_main_container ends  -->
+    <!-- w3_main_container starts  -->
+    <!-- of sql -->
+    <div class="w3_main_container">
+      <div class="w3_content1_box w3_white_bg">
+        <div class="w3_content1_box_left">
+          <h1 class="w3_black_color">SQL</h1>
+          <p class="w3_black_color">The language for programming web pages</p>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Learn SQL</a
+          >
+          <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+            >SQL Reference</a
+          >
+        </div>
+        <div class="w3_content1_box_right w3_grey_bg">
+          <h1>SQL Example:</h1>
+          <div class="example_box w3_white_bg">
+            <p>
+              <span class="w3_blue_color">SELECT</span>
+              <span class="w3_black_color">*</span>
+              <span class="w3_blue_color">FROM</span>
+              <span class="w3_black_color">Customers</span>
+            </p>
+            <p>
+              <span class="w3_blue_color">WHERE</span>
+              <span class="w3_black_color">Country=</span>
+              <span class="w3_darkred_color">'Mexico'</span
+              ><span class="w3_black_color">;</span>
+            </p>
+          </div>
+          <a href="#" class="w3_buttons w3_green_bg w3_white_color"
+            >Try it yourself</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- w3_main_container ends  -->
+
+    <div class="other_link_container_outer">
+      <div class="other_link_container">
+        <!-- lg_link of php starts  -->
+        <div class="lg_link_container w3_pink_bg">
+          <h1>Php</h1>
+          <p>A web server programming language</p>
+          <div class="other_container_link_box">
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learn PHP</a
+            >
+          </div>
+        </div>
+        <!-- lg_link of php ends  -->
+        <!-- lg_link of jquery starts  -->
+        <div class="lg_link_container w3_yellow_bg">
+          <h1>jQuery</h1>
+          <p>A JS library for developing web pages</p>
+          <div class="other_container_link_box">
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learn jQuery</a
+            >
+          </div>
+        </div>
+        <!-- lg_link of jquery ends  -->
+        <!-- lg_link of Java starts  -->
+        <div class="lg_link_container w3_lightblue_bg">
+          <h1>Java</h1>
+          <p>A programming language</p>
+          <div class="other_container_link_box">
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learn Java</a
+            >
+          </div>
+        </div>
+        <!-- lg_link of Java ends  -->
+        <!-- lg_link of C++ starts  -->
+        <div class="lg_link_container w3_lightblue_bg">
+          <h1>C++</h1>
+          <p>A programming language</p>
+          <div class="other_container_link_box">
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learn C++</a
+            >
+          </div>
+        </div>
+        <!-- lg_link of C++ ends  -->
+        <!-- lg_link of W3.CSS starts  -->
+        <div class="lg_link_container w3_grey_bg">
+          <h1>W3.CSS</h1>
+          <p>A CSS framework for faster and better responsive web pages</p>
+          <div class="other_container_link_box">
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learn W3.CSS</a
+            >
+          </div>
+        </div>
+        <!-- lg_link of W3.CSS ends  -->
+        <!-- lg_link of Bootstrap starts  -->
+        <div class="lg_link_container w3_grey_bg">
+          <h1>Bootstrap</h1>
+          <p>A CSS framework for designing better web pages</p>
+          <div class="other_container_link_box">
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learm BS3</a
+            >
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learm BS4</a
+            >
+            <a href="#" class="w3_buttons w3_dark_blue_bg w3_white_color"
+              >Learm BS5</a
+            >
+          </div>
+        </div>
+        <!-- lg_link of Bootstrap ends  -->
+        <!-- w3links_box of c# starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20"> C#</a>
+        <!-- w3links_box of c# ends  -->
+        <!-- w3links_box of R starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> R</a>
+        <!-- w3links_box of R ends  -->
+        <!-- w3links_box of Kotlin starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> Kotlin</a>
+        <!-- w3links_box of Kotlin ends  -->
+        <!-- w3links_box of MySQL starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20"> MySQL</a>
+        <!-- w3links_box of MySQL ends  -->
+        <!-- w3links_box of NODEJS starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20">
+          NodeJS</a
+        >
+        <!-- w3links_box of NODEJS ends  -->
+        <!-- w3links_box of React starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20"> React</a>
+        <!-- w3links_box of React ends  -->
+        <!-- w3links_box of Json starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> Json</a>
+        <!-- w3links_box of Json ends  -->
+        <!-- w3links_box of AngularJS starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> AngularJS</a>
+        <!-- w3links_box of AngularJS ends  -->
+        <!-- w3links_box of W3.JS starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> W3.JS</a>
+        <!-- w3links_box of W3.JS ends  -->
+        <!-- w3links_box of XML starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20"> XML</a>
+        <!-- w3links_box of XML ends  -->
+        <!-- w3links_box of Sass starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20"> Sass</a>
+        <!-- w3links_box of Sass ends  -->
+        <!-- w3links_box of Icons starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> Icons</a>
+        <!-- w3links_box of Icons ends  -->
+        <!-- w3links_box of RWD starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> RWD</a>
+        <!-- w3links_box of RWD ends  -->
+        <!-- w3links_box of Graphics starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> Graphics</a>
+        <!-- w3links_box of Graphics ends  -->
+        <!-- w3links_box of SVG starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20"> SVG</a>
+        <!-- w3links_box of SVG ends  -->
+        <!-- w3links_box of canvas starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20"> Canvas</a>
+        <!-- w3links_box of canvas ends  -->
+        <!-- w3links_box of Raspberry PI starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20">
+          Raspberry PI</a
+        >
+        <!-- w3links_box of Raspberry PI ends  -->
+        <!-- w3links_box of Cyber starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> Cyber</a>
+        <!-- w3links_box of Cyber ends  -->
+        <!-- w3links_box of color starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> Color</a>
+        <!-- w3links_box of color ends  -->
+        <!-- w3links_box of GIT starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20"> GIT</a>
+        <!-- w3links_box of GIT ends  -->
+        <!-- w3links_box of Matplotlib starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20">
+          Matplotlib</a
+        >
+        <!-- w3links_box of Matplotlib ends  -->
+        <!-- w3links_box of NumPy starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20"> NumPy</a>
+        <!-- w3links_box of NumPy ends  -->
+        <!-- w3links_box of SciPy starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> SciPy</a>
+        <!-- w3links_box of SciPy ends  -->
+        <!-- w3links_box of Pandas starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> Pandas</a>
+        <!-- w3links_box of Pandas ends  -->
+        <!-- w3links_box of ASP starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box20"> ASP</a>
+        <!-- w3links_box of ASP ends  -->
+        <!-- w3links_box of Accessibility starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box20">
+          Accessibility</a
+        >
+        <!-- w3links_box of Accessibility ends  -->
+        <!-- w3links_box of AppML starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box20"> AppML</a>
+        <!-- w3links_box of AppML ends  -->
+        <!-- w3links_box of GO starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box20"> GO</a>
+        <!-- w3links_box of GO ends  -->
+        <!-- w3links_box of Excel starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box45"> Excel</a>
+        <!-- w3links_box of Excel ends  -->
+        <!-- w3links_box of Google Sheets starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box45">
+          Google Sheets</a
+        >
+        <!-- w3links_box of Google Sheets ends  -->
+        <!-- w3links_box of Machine Learning starts  -->
+        <a href="#" class="w3links_box w3_lightblue_bg w3links_box45">
+          Machine Learning</a
+        >
+        <!-- w3links_box of Machine Learning ends  -->
+        <!-- w3links_box of Artificial intelligence starts  -->
+        <a href="#" class="w3links_box w3_yellow_bg w3links_box45">
+          Artificial intelligence</a
+        >
+        <!-- w3links_box of Artificial intelligence ends  -->
+        <!-- w3links_box of Statistics starts  -->
+        <a href="#" class="w3links_box w3_pink_bg w3links_box45"> Statistics</a>
+        <!-- w3links_box of Statistics ends  -->
+        <!-- w3links_box of Data Science starts  -->
+        <a href="#" class="w3links_box w3_grey_bg w3links_box45">
+          Data Science</a
+        >
+        <!-- w3links_box of Data Science ends  -->
+      </div>
+
+      <!-- code editor container starts  -->
+      <div class="code_editor_container">
+        <h1 class="w3_white_color">Code Editor</h1>
+        <p class="w3_white_color">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="code_editor_box w3_gray_bg">
+          <div class="code_editor_bar_box">
+            <div class="code_editor_dot_box">
+              <span class="w3_red_bg"></span>
+              <span class="w3_yellow_bg"></span>
+              <span class="w3_green_bg"></span>
+            </div>
+            <div class="code_editor_input_box">
+              <input type="text" value="www.w3schools.com/tryit/" />
+            </div>
+          </div>
+          <div class="code_editor_button_box">
+            <button id="editorFront" onclick="editorFrontGifShow()">
+              Frontend
+            </button>
+
+            <button id="editorBack" onclick="editorBackGifShow()">
+              Backend
+            </button>
+          </div>
+          <img
+            id="editorFrontGif"
+            class="dis_block"
+            src="SASS/images/w3f.gif"
+            alt=""
+            onclick="editorFrontGifShow()"
+          />
+          <img
+            id="editorBackGif"
+            class="dis_none"
+            src="SASS/images/w3.gif"
+            alt=""
+          />
+        </div>
+        <div class="code_editor_link_box">
+          <a class="w3_buttons w3_green_bg w3_white_color" href="#"
+            >Try Frontend Editor (HTML/CSS/JS)</a
+          >
+          <a class="w3_buttons w3_yellow_bg w3_black_color" href="#"
+            >Try Backend Editor (php/java...)</a
+          >
+        </div>
+      </div>
+      <!-- code editor container ends  -->
+    </div>
+    <!-- w3 template container starts  -->
+    <div class="template_container_upper w3_gray_bg">
+      <div class="template_container w3_gray_bg">
+        <h1>Web Templates</h1>
+        <p>Browse our selection of free responsive HTML Templates</p>
+        <img src="SASS/images/w3_temp_img.jpg" alt="" />
+        <a class="w3_dark_blue_bg w3_white_color" href="#">BROWSE TEMPLATES</a>
+      </div>
+    </div>
+    <!-- w3 template container ends  -->
+    <!-- w3 footer container starts  -->
+    <footer class="w3_dark_blue_bg">
+      <div class="footer_row1">
+        <div class="footer_row1_left">
+          <a href="#">COURSES</a>
+          <a href="#">QUIZZES</a>
+          <a href="#">EXERCISES</a>
+        </div>
+        <div class="footer_row1_right">
+          <a href="#">FORUM</a>
+          <span></span>
+          <a href="#">ABOUT</a>
+        </div>
+      </div>
+      <div class="footer_row2">
+        <div class="footer_link_box">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <p>
+        W3Schools is optimized for learning, testing, and training. Examples
+        might be simplified to improve reading and basic understanding.
+        Tutorials, references, and examples are constantly reviewed to avoid
+        errors, but we cannot warrant full correctness of all content. While
+        using this site, you agree to have read and accepted our
+        <a href="#">terms of use</a> ,
+        <a href="#">cookie and privacy policy</a> .
+        <a href="#">Copyright 1999-2021</a> by Refsnes Data. All Rights
+        Reserved.
+      </p>
+      <div class="footer_like_box">
+        <a href="#"><i class="far fa-thumbs-up"></i></a>
+      </div>
+      <div class="w3_shop_box">
+        <a href="#">W3SCHOOLS SHOP</a>
+      </div>
+    </footer>
+    <!-- w3 footer container ends  -->
+    <script src="w3clone.js"></script>
+  </body>
+</html>
